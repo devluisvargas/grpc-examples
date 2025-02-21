@@ -1,0 +1,17 @@
+syntax = 'proto3';
+
+package com.prime.grpc;
+option java_package = 'com.prime.grpc';
+option java_multiple_files = true;
+
+message PrimeRequest{
+  int32 value = 1;
+}
+
+message PrimeResponse{
+  int32 result = 1;
+}
+
+service PrimeService{
+  rpc execute(PrimeRequest) returns (stream PrimeResponse);
+}
