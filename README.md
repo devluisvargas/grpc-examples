@@ -8,14 +8,18 @@ Este repositorio contiene múltiples proyectos de ejemplo que demuestran el uso 
 
 📌 **Streaming Client Communication** → `grpc-java-avg`
 
+📌 **Streaming Bidireccional Communication** → `grpc-java-max`
+
 ---
 
 ## 📂 Estructura del Repositorio
-📁 `grpc-java-sum/` → **Suma de valores** usando comunicación **Unary**. 
+📁 `grpc-java-sum/` → **Suma de valores** usando comunicación **Unary**.
 
 📁 `grpc-java-prime-descomposer/` → **Descomposición en factores primos** usando **Streaming Server**.
 
 📁 `grpc-java-avg/` → **Cálculo de promedio** usando **Streaming Client**.
+
+📁 `grpc-java-max/` → **Máximo valor en flujo de datos** usando **Streaming Bidireccional**.
 
 ---
 
@@ -51,6 +55,17 @@ Este proyecto muestra cómo implementar una comunicación **Streaming Client** e
 - 📜 **Archivo .proto:** Define el servicio `AvgService` con una operación `execute` que toma un flujo de `AvgRequest` y devuelve un único `AvgResponse` con el promedio calculado.
 - 🖥️ **Servidor:** Implementa el servicio `AvgService` y escucha en el puerto especificado.
 - 🏗️ **Cliente:** Envía un conjunto de valores al servidor y espera la respuesta con el promedio calculado.
+
+---
+
+### 4️⃣ `grpc-java-max` 🔼
+
+Este proyecto implementa una comunicación **Streaming Bidireccional** en gRPC. El cliente envía un flujo de números enteros al servidor, y el servidor responde continuamente con el valor máximo encontrado hasta el momento.
+
+📝 **Detalles:**
+- 📜 **Archivo .proto:** Define el servicio `MaxService` con una operación `execute` que toma un flujo de `MaxRequest` y devuelve un flujo de `MaxResponse`.
+- 🖥️ **Servidor:** Implementa el servicio `MaxService` y escucha en el puerto especificado.
+- 🏗️ **Cliente:** Envía un flujo de valores al servidor y recibe respuestas continuas con el valor máximo hasta el momento.
 
 ---
 
