@@ -6,8 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="grpc-java-prime-descomposer" />
-        <module name="grpc-java-sum" />
         <module name="grpc-java-avg" />
       </profile>
     </annotationProcessing>

@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/grpc-examples.iml" filepath="$PROJECT_DIR$/.idea/grpc-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-java-avg.iml" filepath="$PROJECT_DIR$/grpc-java-avg.iml" />
       <module fileurl="file://$PROJECT_DIR$/grpc-java-prime-descomposer.iml" filepath="$PROJECT_DIR$/grpc-java-prime-descomposer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-java-sum/grpc-java-sum.iml" filepath="$PROJECT_DIR$/grpc-java-sum/grpc-java-sum.iml" />
     </modules>
   </component>
 </project>
